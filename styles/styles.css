@@ -1,55 +1,75 @@
+:root {
+    --main-blue: darkblue;
+    --main-white: #fff;
+    --main-black: #000;
+    --main-gray: gray;
+    --main-border-radius: 1px;
+    --main-padding: 10px;
+    --main-img-width: 150px;
+    --aside-img-width: 200px;
+    --main-bg: #eee;
+    --main-text: #333;
+    --main-max-width: 840px;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+    --aside-padding: 1rem;
+    --footer-margin-top: 15px;
+}
+/* CSS Variables for repeated values */
+
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--main-blue);
+    padding: var(--main-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--main-white);
     display: block;
-    
-    padding: 20px;
+    padding:20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-blue);
 }
 
 img {
-    width: 150px;
+    width: var(--main-img-width);
     height: auto;
-    border: 1px solid black;
+    border: var(--main-border-radius) solid var(--main-black);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--main-gray);
 }
 
 p {
-    padding: 10px; }
+    padding: var(--main-padding);
+}
 
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
     border: 1px solid rgb(0 0 0 / 0.2); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    padding: var(--aside-padding);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     text-align: center;
 }
 aside img {
-    width: 200px;
+    width: var(--aside-img-width);
     height: auto;
 }
 main img {
-    width: 150px;
+    width: var(--main-img-width);
     height: auto;
 }
-p { padding: 0;}
+p { padding: 0; }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: 1px solid var(--main-black);
     text-align: center;
 }
