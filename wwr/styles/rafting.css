@@ -1,28 +1,94 @@
-/* Rafting Site Color Palette */
+/* Modern Rafting Site Color Palette */
 :root {
-  --primary-color: #B4D96F;
-  --secondary-color: #CAE9FF;
-  --accent1-color: #5FA8D3;
-  --accent2-color: #62B6CB;
+  --primary-color: #0a2342;      /* Deep navy blue */
+  --secondary-color: #2ca6a4;    /* Vibrant teal */
+  --accent1-color: #f7c873;      /* Warm gold */
+  --accent2-color: #f9f9f9;      /* Soft white */
+  --text-color: #222;
 }
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;
-  background-color: var(--secondary-color);
-  color: #222;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent2-color) 100%);
+  color: var(--text-color);
+  margin: 0;
+  min-height: 100vh;
 }
 
-header, footer {
+header {
   background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem 0;
+  text-align: center;
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: var(--accent1-color);
+header img {
+  max-width: 120px;
 }
 
 nav a {
+  color: var(--accent1-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+nav a:hover {
   color: var(--accent2-color);
 }
 
-/* Add more styles as needed for your rafting site */
+main {
+  padding: 2rem 1rem;
+}
+
+.hero {
+  background: var(--accent2-color);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+section {
+  background: var(--accent2-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.socialmedia a img {
+  width: 32px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 4px rgba(44,166,164,0.2));
+}
+
+/* Gallery images */
+section img {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(44,166,164,0.12);
+  margin: 0.5rem;
+  max-width: 180px;
+  height: auto;
+}
