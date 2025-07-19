@@ -1,0 +1,28 @@
+/* Rafting Site Color Palette */
+:root {
+  --primary-color: #B4D96F;
+  --secondary-color: #CAE9FF;
+  --accent1-color: #5FA8D3;
+  --accent2-color: #62B6CB;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: #222;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--accent1-color);
+}
+
+nav a {
+  color: var(--accent2-color);
+}
+
+/* Add more styles as needed for your rafting site */
