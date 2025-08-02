@@ -225,5 +225,5 @@ footer a:focus {
     height: 24px;
 }
 footer p {
-    --main-white: #ffffff;
+  color: var(--main-white);
 }
