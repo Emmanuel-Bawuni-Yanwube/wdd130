@@ -224,3 +224,6 @@ footer a:focus {
     width: 24px;
     height: 24px;
 }
+footer p {
+    --main-yellow: #FFD700;
+}
