@@ -1,0 +1,50 @@
+Header (consistent with your About page)
+
+Logo on the left
+
+Navigation links centered
+
+Page Title / Hero Section
+
+Large heading: Contact Us
+
+Intro line or tag welcoming visitors to reach out
+
+Company Information Section
+
+Address, phone number, email
+
+Laid out in a simple boxed block
+
+Google Map Embed
+
+Rectangle placeholder for the embedded map
+
+Positioned next to or below contact info depending on layout
+
+Contact Form
+
+Fields: Name, Email
+
+Dropdown: Purpose (Booking, Support, Feedback, Other)
+
+Text area for message
+
+Checkbox for newsletter
+
+Submit button clearly labeled “Send Message”
+
+Team / Employee Gallery
+
+Three profile blocks are horizontally aligned
+
+Each with an image placeholder and caption below
+
+Footer with Wireframe Link
+
+Copyright text (styled white over colored background)
+
+Link to contact-wireframe.pdf
+
+Social media icons/links
+

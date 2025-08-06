@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-        content="The About Us Page Of The Rafting Website - Get in touch for bookings, inquiries, and support.">
+        content="Contact Splash White Water Rafting - Get in touch for bookings, inquiries, and support.">
     <meta name="author" content="Emmanuel Bawuni Yanwube">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Splash White Water Rafting</title>
+    <title>Contact Us - Splash White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -63,7 +63,69 @@
             <img src="images/Corey.jpg" alt="Rafting Adventure 5">
         </section>
 
-        
+        <!-- Required Additions for Contact Page -->
+        <section class="contact-info">
+            <h2> Splash White Water Rafting</h2>
+            <p><strong>Address:</strong> Spintex road, Accra Ghana</p>
+            <p><strong>Phone:</strong> +233 591598820</p>
+            <p><strong>Email:</strong> <a href="ebawuni155@gmail.com">ebawuni155@gmail.com</a></p>
+        </section>
+
+        <section>
+            <h2>Find Us on the Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192640498745!2d-122.40136048469172!3d37.787993979756834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b8194b5d%3A0x2c6e0e2d624dc7d0!2sWhitewater%20Rafting%20Adventures!5e0!3m2!1sen!2sus!4v1680000000000"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <fieldset>
+                    <legend>Your Info</legend>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Purpose & Message</legend>
+                    <select name="purpose" required>
+                        <option value="">Select Purpose</option>
+                        <option value="booking">Booking Inquiry</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Subscribe to our newsletter
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/customer 1.jpg" alt="Sarah Lead Guide">
+                    <figcaption>Sarah Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/custormer 2.avif" alt="James  Safety Manager">
+                    <figcaption>James Safety Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/customer3.jpg" alt="LindaGuest Services">
+                    <figcaption>Emmanuel Guest Services</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
     <footer>
