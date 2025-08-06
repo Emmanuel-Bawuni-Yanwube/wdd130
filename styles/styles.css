@@ -188,7 +188,7 @@ footer {
     border-top: 1px solid var(--main-white);
     text-align: center;
     padding: 1rem;
-    background-color: var(--main-blue);
+    background-color: var(--main--yellow );
     color: var(--main-white);
 }
 
