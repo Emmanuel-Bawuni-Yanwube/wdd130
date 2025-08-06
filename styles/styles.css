@@ -185,7 +185,7 @@ button[type="submit"]:focus {
 /* Footer Styling */
 footer {
     margin-top: var(--footer-margin-top);
-    border-top: 1px solid var(--main-yellow);
+    border-top: 1px solid var(--main-white);
     text-align: center;
     padding: 1rem;
     background-color: var(--main-blue);
@@ -193,7 +193,7 @@ footer {
 }
 
 footer a {
-    color: var(--main-yellow);
+    color: var(--main-white);
     text-decoration: underline;
 }
 
