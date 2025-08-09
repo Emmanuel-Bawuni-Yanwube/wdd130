@@ -184,3 +184,71 @@ footer .socialmedia a img {
   width: 32px;
   filter: drop-shadow(0 2px 4px rgba(191, 230, 20, 0.2));
 }
+
+/* Trips Page Additions */
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  border: 2px dashed var(--accent1-color);
+}
+
+.cta .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Trip Descriptions Grid */
+.trip-descriptions {
+  padding: 2rem;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.trip {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Trip Table */
+.trip-table {
+  padding: 2rem;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
