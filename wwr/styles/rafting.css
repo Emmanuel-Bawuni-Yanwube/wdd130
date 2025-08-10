@@ -1,13 +1,9 @@
 /* Modern Rafting Site Color Palette */
 :root {
   --primary-color: #0a2342;
-  /* Deep navy blue */
   --secondary-color: #2ca6a4;
-  /* Vibrant teal */
   --accent1-color: #f7c873;
-  /* Warm gold */
   --accent2-color: #f9f9f9;
-  /* Soft white */
   --text-color: #222;
   --heading-font: 'Montserrat', Arial, sans-serif;
   --body-font: 'Open Sans', Arial, sans-serif;
@@ -27,228 +23,151 @@ body {
   min-height: 100vh;
 }
 
-header,
-main,
-footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* Header layout using CSS Grid */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 1rem;
   padding: 1rem 0;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 
-/* Navigation using Flexbox */
-header nav {
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   background-color: var(--primary-color);
   padding: 0.5rem;
 }
 
-header nav a {
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
   color: var(--accent1-color);
   text-decoration: none;
-  margin: 0 1rem;
-  font-weight: 700;
+  font-weight: bold;
   transition: color 0.2s;
 }
 
-header nav a:hover {
+nav ul li a:hover {
   color: var(--accent2-color);
 }
 
-/* Hero Section */
 .hero {
   position: relative;
-  background: var(--accent2-color);
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 2rem;
-  overflow: hidden;
 }
 
-.hero img {
-  display: block;
+.hero-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero h1 {
+.hero-text {
   position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.9;
-  background-color: var(--accent1-color);
-  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
   font-family: var(--heading-font);
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  background: rgba(44, 166, 164, 0.85);
-  color: #fff;
-  padding: 16px;
-  border-radius: 0 0 1rem 1rem;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 16px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(230, 236, 231, 0.12);
-}
-
-/* Main Content */
-main {
-  padding: 2rem 1rem;
-}
-
-section {
-  background: var(--accent2-color);
+.newsletter {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  text-align: center;
   border-radius: 0.5rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
 }
 
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h2 {
+.newsletter label,
+.newsletter input {
+  margin: 0.5rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.call-to-action {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  text-align: center;
+  border: 2px dashed var(--accent1-color);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  background-color: var(--accent2-color);
+  border-radius: 0.5rem;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(44, 166, 164, 0.12);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-p,
-ul {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--text-color);
-}
-
-/* Gallery images */
-section img {
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(44, 166, 164, 0.12);
-  margin: 0.5rem;
-  max-width: 180px;
-  height: auto;
-}
-
-/* Footer */
 footer {
   background-color: var(--primary-color);
   color: var(--accent2-color);
   text-align: center;
   padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-footer .socialmedia {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding-right: 1rem;
-}
-
-footer .socialmedia a {
-  text-decoration: none;
-  color: var(--accent2-color);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-footer .socialmedia a img {
-  width: 32px;
-  filter: drop-shadow(0 2px 4px rgba(191, 230, 20, 0.2));
-}
-
-/* Trips Page Additions */
-
-/* Call to Action */
-.cta {
-  text-align: center;
-  background-color: var(--accent2-color);
-  padding: 2rem;
-  border: 2px dashed var(--accent1-color);
-}
-
-.cta .button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-/* Trip Descriptions Grid */
-.trip-descriptions {
-  padding: 2rem;
-}
-
-.trip-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.trip {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.trip img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-/* Trip Table */
-.trip-table {
-  padding: 2rem;
-}
-
-.trip-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.trip-table th,
-.trip-table td {
-  border: 1px solid #ccc;
-  padding: 0.75rem;
-  text-align: center;
-}
-
-.trip-table th {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
 }
