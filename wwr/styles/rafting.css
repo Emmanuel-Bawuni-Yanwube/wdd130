@@ -163,11 +163,10 @@ footer {
         margin-top: 2rem;
       }
 footer p {
-  color: #fff;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 700;
-    transition: color 0.2s;
+  text-decoration: none;
+    color: var(--accent2-color);
+    display: flex;
+    align-items: center
 }
 
 footer .socialmedia {
