@@ -163,7 +163,7 @@ footer {
         margin-top: 2rem;
       }
 footer p {
-  color: var(--accent1-color);
+  color: #fff;
     text-decoration: none;
     margin: 0 1rem;
     font-weight: 700;
